@@ -10,10 +10,10 @@ const upcInput = document.getElementById("upc-input");
 const isbnInput = document.getElementById("isbn-input");
 const imageArray = ["img0.jpg","img1.jpg","img2.jpg", "img3.jpg", "img4.jpg"];
 
-// REPLACE THE API AND HASH WITH YOUR OWN
+// INITIALIZE THE API AND HASH VARIABLES WITH YOUR OWN CREDENTIALS
 // ALSO UNDISABLE THE BUTTONS FROM THE HTML FILE
-const apikey = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-const hash = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const apikey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+const hash = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 
 var imageIndex = 0;
 var index = 0;
