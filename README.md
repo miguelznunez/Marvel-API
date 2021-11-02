@@ -2,6 +2,6 @@
 
 2.) Hash the api key by following these directions https://developer.marvel.com/documentation/authorization
 
-3.) Initialize the apikey and hash variables in the script.js file with your own
+3.) Initialize the apikey and hash variables in the script.js file from this project with your own
 
 4.) Enjoy
