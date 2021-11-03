@@ -281,7 +281,19 @@ header{
   }
 }
 
+@media(max-width:1100px){
+  .characters, .comics{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media(max-width:768px){
+  .sub-container{
+    width: 95%;
+  }
+
   .branding{
     padding-left: 0px;
     margin: auto;
@@ -338,5 +350,17 @@ header{
   }
   input{
     width: 60%;
+  }
+
+  .character{
+    width: 100%;
+  }
+
+  .comic{
+    width: 100%;
+  }
+
+  .isbn{
+    width: 100%;
   }
 }
