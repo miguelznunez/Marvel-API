@@ -11,14 +11,10 @@ body{
   background: white;
 }
 
-.main-container{
-  width: 1600px;
-  margin: auto;
-}
-
-.sub-container{
-  width: 85%;
-  margin: auto;
+header{
+  color:white;
+  font-family: 'marvelregular';
+  font-size: 2rem;
 }
 
 button{
@@ -52,6 +48,16 @@ input{
   border-bottom-right-radius: 0;
 }
 
+.main-container{
+  width: 1600px;
+  margin: auto;
+}
+
+.sub-container{
+  width: 85%;
+  margin: auto;
+}
+
 .image{
   width: 450px;
   height: auto;
@@ -76,17 +82,10 @@ input{
 
 #header{
   background-color: black;
-  min-height: 80px;
-
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-header{
-  color:white;
-  font-family: 'marvelregular';
-  font-size: 2rem;
 }
 
 /* COMIC DETAILS */
@@ -104,9 +103,10 @@ header{
 
 .showcase{
   width: 100%;
-  min-height: 500px;
+  min-height: 450px;
   background-position: 50% 40%;
   background-size: cover;
+  transition: 0.3s ease-out;
 }
 
 .showcase h1{
@@ -115,7 +115,7 @@ header{
 
 .overlay{
   width: 100%;
-  min-height: 500px;
+  min-height: 450px;
   background-image: linear-gradient(0.50turn, transparent, black, transparent);
 }
 
@@ -123,7 +123,7 @@ header{
   text-shadow: 2px 2px black;
   font-size: 1.2rem;
   width: 70%;
-  min-height: 500px;
+  min-height: 450px;
   margin: auto;
   text-align: center;
   color: white;
@@ -133,13 +133,11 @@ header{
   flex-direction: column;
 }
 
-
 #search-characters, #search-comics, #search-description{
   min-height: 300px;
   background-position: 50% 50%;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6),black), url('img6.jpg');
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,7 +172,6 @@ header{
 }
 
 #characters, #comics, #description{
-  min-height: 500px;
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
@@ -190,7 +187,6 @@ header{
 }
 
 .characters, .comics, .description {
-  min-height: 500px;
   width: 100%;
   height: auto;
   display: flex;
