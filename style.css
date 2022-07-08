@@ -128,7 +128,7 @@ input{
 
 .showcase{
   width: 100%;
-  min-height: 600px;
+  min-height: 500px;
   background-position: 50% 40%;
   background-size: cover;
   transition: 0.3s ease-out;
@@ -140,7 +140,7 @@ input{
 
 .overlay{
   width: 100%;
-  min-height: 600px;
+  min-height: 500px;
   background-image: linear-gradient(0.50turn, transparent, black, transparent);
 }
 
@@ -148,7 +148,7 @@ input{
   text-shadow: 2px 2px black;
   font-size: 1.4rem;
   width: 70%;
-  min-height: 600px;
+  min-height: 500px;
   margin: auto;
   text-align: center;
   color: white;
@@ -210,7 +210,7 @@ input{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 600px;
+  min-height: 500px;
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
