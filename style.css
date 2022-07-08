@@ -6,15 +6,13 @@
   margin: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Bangers', cursive;
   background: white;
-}
-
-header{
-  color:white;
-  font-family: 'marvelregular';
-  font-size: 2rem;
 }
 
 button{
@@ -82,10 +80,37 @@ input{
 
 #header{
   background-color: black;
-  height: 80px;
+  min-height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.branding h1{
+  color: #ED1D24;
+  font-family: 'marvelregular';
+  font-size: 4rem;
+}
+
+.nav-menu{
+  color: white;
+  display: flex;
+  gap: 60px;
+}
+
+.nav-menu a{
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu li{
+  list-style: none;
 }
 
 /* COMIC DETAILS */
@@ -103,7 +128,7 @@ input{
 
 .showcase{
   width: 100%;
-  min-height: 450px;
+  min-height: 600px;
   background-position: 50% 40%;
   background-size: cover;
   transition: 0.3s ease-out;
@@ -115,15 +140,15 @@ input{
 
 .overlay{
   width: 100%;
-  min-height: 450px;
+  min-height: 600px;
   background-image: linear-gradient(0.50turn, transparent, black, transparent);
 }
 
 .title{
   text-shadow: 2px 2px black;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   width: 70%;
-  min-height: 450px;
+  min-height: 600px;
   margin: auto;
   text-align: center;
   color: white;
@@ -133,7 +158,13 @@ input{
   flex-direction: column;
 }
 
-#search-characters, #search-comics, #search-description{
+.title h1{
+  font-size: 5rem;
+}
+
+#search-characters,
+#search-comics,
+#search-description{
   min-height: 300px;
   background-position: 50% 50%;
   background-size: cover;
@@ -171,7 +202,13 @@ input{
   background-image: linear-gradient(0.25turn, transparent, rgb(25, 149, 187), transparent);
 }
 
-#characters, #comics, #description{
+#characters,
+#comics,
+#description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
@@ -186,12 +223,13 @@ input{
   background-image: linear-gradient(rgba(0, 0, 0, 0.6),black), url('img10.jpg');
 }
 
-.characters, .comics, .description {
-  width: 100%;
-  height: auto;
+.characters,
+.comics,
+.description {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
@@ -285,10 +323,19 @@ input{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
   }
 }
 
 @media(max-width:768px){
+  .title h1 {
+    font-size: 3.5rem;
+  }
+  .nav {
+    padding: 20px 0;
+    flex-direction: column;
+  }
+
   .sub-container{
     width: 95%;
   }
