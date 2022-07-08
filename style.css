@@ -47,7 +47,7 @@ input{
 }
 
 .main-container{
-  width: 1500px;
+  width: 1366px;
   margin: auto;
 }
 
@@ -93,7 +93,7 @@ input{
 }
 
 .branding h1{
-  color: #ED1D24;
+  color: red;
   font-family: 'marvelregular';
   font-size: 4rem;
 }
@@ -182,13 +182,15 @@ input{
   background-image: linear-gradient(rgba(0, 0, 0, 0.6),black), url('img9.jpg');
 }
 
-.search-characters, .search-comics, .search-description{
+.search-characters,
+.search-comics,
+.search-description{
   width: 100%;
   margin: auto;
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 0;
   background-image: linear-gradient(0.25turn, transparent, rgb(187, 176, 25), transparent);
@@ -270,7 +272,12 @@ input{
   transition: all 1s;
 }
 
-.img-1, .img-2, .img-3, .img-4, .img-5, .img-6{
+.img-1,
+.img-2,
+.img-3,
+.img-4,
+.img-5,
+.img-6{
   width: 100%;
   height: 100%;
   background-position: center;
@@ -312,18 +319,31 @@ input{
   background-color: black;
 }
 
-@media(max-width:1500px){
+@media(max-width:1366px){
   .main-container{
     width: 100%;
   }
 }
 
 @media(max-width:1100px){
-  .characters, .comics{
+  .characters,
+  .comics{
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding: 20px 0;
+  }
+
+  .search-characters,
+  .search-comics,
+  .search-description {
+    padding: 20px 0;
+    justify-content: center;
+  }
+
+  .search-comics{
+    flex-wrap: wrap-reverse;
   }
 }
 
