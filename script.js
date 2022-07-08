@@ -8,7 +8,7 @@ const comicIDInput = document.getElementById("comics-id-input");
 const comicTitleInput = document.getElementById("comics-title-input");
 const upcInput = document.getElementById("upc-input");
 const isbnInput = document.getElementById("isbn-input");
-const imageArray = ["img0.jpg","img1.jpg","img2.jpg", "img3.jpg", "img4.jpg"];
+const imageArray = ["img3.jpg","img1.jpg","img2.jpg", "img0.jpg", "img4.jpg"];
 
 // INITIALIZE THE API AND HASH VARIABLES WITH YOUR OWN CREDENTIALS
 // ALSO UNDISABLE THE BUTTONS FROM THE HTML FILE
